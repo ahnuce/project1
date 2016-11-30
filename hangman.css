@@ -2,5 +2,8 @@ body {
   text-align: center;
   justify-content: center;
   background-color: black;
-  color: white;
+  color: yellow;
+  font-family: "marker felt", serif;
+  font-size: 30px;
+  text-shadow: 2px 2px blue;
 }
