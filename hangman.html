@@ -10,28 +10,24 @@
     <title>Anusone's Hangman Game</title>
   </head>
   <body>
-<div id='title'>Anusone's Hangman Game</div>
+<div id='title'>Hangman Game</div>
 <div class="head">
 
 
 
 <form action="hangman.html">
-  <input id='wordInput' type="text" placeholder='enter here' name="wordInput"><br>
-  <button type="button" name="button">Start Game</button>
-
-
+  <input id='wordInput' type="text" placeholder='enter word' name="wordInput"><br>
+  <button id='buttonOne' type="button" name="button">Start Game</button>
 </form>
+
 
 <p id='wordInputArr' class='wordInputArr'>Player 1 please input word and click Start Game</p>
 
-
-
-
+<div class="">
+<input id='wordInputTwo' type="text" name="wordInputTwo" height="10px" width='100' placeholder="Letter Guesses"><button id='buttonTwo' type="button" name="button"></button>
+</div>
 
 
 <script src="hangman.js"></script>
-
-
-
   </body>
 </html>

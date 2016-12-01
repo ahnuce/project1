@@ -1,64 +1,78 @@
 
-//set up the variables
-var newHTML = [];
-var alphabetArray = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-var button = $('button');
+//set up the variables*********************************//
+var buttonOne = $('#buttonOne');
+var buttonTwo = $('#buttonTwo');
 var startGame = $('startGame');
 var createLetterSelection = $('createLetterSelection');
-var makeAlphabetArr;
+var makeInputArr;
 var $wordInput = $(wordInput);
+var $wordInputTwo = $(wordInputTwo);
 var wordArray = [];
 var p = $('#wordInputArr');
 var divs = document.getElementsByClassName('divboard');
 var form = document.getElementById('wordInput');
-
-
-
-//this is to save the users input
-
+var $letterInput = $('letterInput');
+//************************************************//
 
 //click to start game after user inputs word
-button.click(function(){
+buttonOne.click(function(){
   if (startGame){
 console.log('it works');
-//set a variable to the wordInput
+//set a variable to the wordInput************************//
 userWord = $wordInput.val();
-makeAlphabetArr();
+makeInputArr();
 spanValues();
 form.replaceWith('');
 hideAnswer();
 }
 });
+//************************************************//
 
-//function to take userWord and split into array
-function makeAlphabetArr(){
+buttonTwo.click(function(){
+    letterGuess = $wordInputTwo.val();
+    for(i=0; i < wordArray.length; i++){
+      if(letterGuess === wordArray[i]){
+        $('span').eq(i).show();
+      };
+    }
+    console.log('This button works');
+});
+
+
+//function to take userWord and split into array*******//
+function makeInputArr(){
  //takes the user input and splits it into array value
  wordArray = userWord.split('');
   console.log(wordArray);
   p.val(wordArray).hide();
 }
-//***make it hidden. do later
+//************************************************//
+//make it hidden. do later***********************//
 
 
-//take array values and create spans for each value
+//take array values and create spans for each value**//
 function spanValues(){
   for (i=0; i < wordArray.length; i++){
     $('body').append($(`<div class='letterHolder'><span> ${wordArray[i]} </span></div>`));
-    button.hide();
+    buttonOne.hide();
   }
 }
+//************************************************//
 
-//replace wordArray values with underlines
-
+//replace wordArray values with underlines**********//
 function hideAnswer(){
 $('span').hide();
 $('.letterHolder').css('bottom-border', '5px solid');
 }
+//************************************************//
+//make alphabet selection background
 
-//
+
+//player 2 function to input data
+function playerTwo(){
 
 
-
+}
 
 
 
