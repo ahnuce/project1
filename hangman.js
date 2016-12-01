@@ -13,6 +13,7 @@ var divs = document.getElementsByClassName('divboard');
 var form = document.getElementById('wordInput');
 
 
+
 //this is to save the users input
 
 
@@ -25,6 +26,7 @@ userWord = $wordInput.val();
 makeAlphabetArr();
 spanValues();
 form.replaceWith('');
+hideAnswer();
 }
 });
 
@@ -41,27 +43,23 @@ function makeAlphabetArr(){
 //take array values and create spans for each value
 function spanValues(){
   for (i=0; i < wordArray.length; i++){
-    $('body').append($(`<span> ${wordArray[i]} </span>`));
+    $('body').append($(`<div class='letterHolder'><span> ${wordArray[i]} </span></div>`));
     button.hide();
   }
 }
 
 //replace wordArray values with underlines
 
-${wordArray[i]}
+function hideAnswer(){
+$('span').hide();
+$('.letterHolder').css('bottom-border', '5px solid');
+}
+
+//
 
 
 
 
-
-// var container = document.getElementById("wordInputArr");
-// for (var i = 0; i < x.length; i++) {
-//    container.innerHTML += '<div class="wordInputArr"></div>';
-// }
-
-
-
-//take x value for array and split it into divs
 
 
 
