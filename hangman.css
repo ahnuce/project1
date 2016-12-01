@@ -6,4 +6,7 @@ body {
   font-family: "marker felt", serif;
   font-size: 30px;
   text-shadow: 2px 2px blue;
+  background-image: url('http://www.firstanimationart.com/sitebuilder/images/PPR_Hangmans_tree-600x445.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
 }
