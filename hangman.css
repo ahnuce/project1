@@ -5,9 +5,10 @@ body {
   font-family: "marker felt", serif;
   font-size: 30px;
   text-shadow: 2px 2px yellow;
-  background-image: url('http://www.firstanimationart.com/sitebuilder/images/PPR_Hangmans_tree-600x445.jpg');
+  background-image: url('hangman.jpg');
   background-position: top;
   background-repeat: no-repeat;
+  background-size: 48%;
 }
 
 .letterHolder {
@@ -16,7 +17,7 @@ body {
   margin: 0 10px;
   display: inline-flex;
   flex-direction: row;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid white;
   width: 40px;
   height: 50px;
 
@@ -25,6 +26,23 @@ body {
 #wordInputArr {
   word-wrap: break-word;
   width: 350px;
-  justify-content: center;
-  display: inline-flex;
+  justify-content: flex-end;;
+  display: flex;
+}
+
+#wordInputTwo {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+#livesCounter {
+
+}
+
+#livesCounterTitle {
+
+
 }

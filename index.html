@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="hangman.css">
     <title>Anusone's Hangman Game</title>
-  </head>
-  <body>
-<div id='title'>Hangman Game</div>
-<div class="head">
+</head>
+
+<body>
+    <div id='title'>Hangman Game</div>
 
 
-
-<form action="hangman.html">
-  <input id='wordInput' type="text" placeholder="Player 1's word" name="wordInput"><br>
-  <button id='buttonOne' type="button" name="button">Start Game</button>
-</form>
-
-
-<p id='wordInputArr' class='wordInputArr'>Player 1 please input word and click Start Game. Player 2 will guess single letters in player 1's word. Player 2 will be allowed 5 wrong guesses before they lose.</p>
-
-<div class="">
-<input id='wordInputTwo' type="text" name="wordInputTwo" height="10px" width='100' placeholder="Letter Guesses"><button id='buttonTwo' type="button" name="button">Player 2 Guesses</button>
-</div>
+    <form action="hangman.html">
+        <input autofocus='autofocus' id='wordInput' type="text" placeholder="Player 1's word" name="wordInput"><br>
+        <button id='buttonOne' type="button" name="button">Start Game</button>
+    </form>
 
 
-<script src="hangman.js"></script>
-  </body>
+    <p id='wordInputArr' class='wordInputArr'>Player 1 please input word and click Start Game. Player 2 will guess single letters in player 1's word. Player 2 will be allowed 5 wrong guesses before they lose.
+    </p>
+
+    <div id='livesCounterTitle'>GUESSES LEFT</div>
+    <div id='livesCounter' value=5></div>
+    <div class="">
+
+        <form id='form2'>
+            <input id='wordInputTwo' type="text" maxlength='1' name="wordInputTwo" height="10px" width='100' placeholder="Letter Guesses">
+            <br><button id='buttonTwo' type="button" name="button">Player 2 Guesses</button>
+        </form>
+    </div>
+
+    <audio id="ffmusic" src='ffmusic.mp3'></audio>
+    <audio id="good-sound" src='ooweee.mp3'></audio>
+    <script src="hangman.js"></script>
+</body>
+
 </html>
