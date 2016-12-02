@@ -12,6 +12,7 @@ var p = $('#wordInputArr');
 var divs = document.getElementsByClassName('divboard');
 var form = document.getElementById('wordInput');
 var $letterInput = $('letterInput');
+var lives = 5;
 //************************************************//
 
 //click to start game after user inputs word
@@ -33,10 +34,18 @@ buttonTwo.click(function(){
     for(i=0; i < wordArray.length; i++){
       if(letterGuess === wordArray[i]){
         $('span').eq(i).show();
-      };
+      }
+      else{
+        lives = lives--;
+        console.log('lives');
+          if(lives===0){
+            console.log('Player 1 has embarrassed Player 2. Congratulations!');
+        }
+      }
     }
-    console.log('This button works');
 });
+
+
 
 
 //function to take userWord and split into array*******//
