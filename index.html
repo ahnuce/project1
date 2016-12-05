@@ -14,27 +14,43 @@
 
 
     <form action="hangman.html">
-        <input autofocus='autofocus' id='wordInput' type="text" placeholder="Player 1's word" name="wordInput"><br>
+        <input autofocus='autofocus' id='wordInput' type="text" placeholder="Player 1's word" name="wordInput"><br><br>
         <button id='buttonOne' type="button" name="button">Start Game</button>
     </form>
 
     <div id='test'>
-    <p id='wordInputArr' class='wordInputArr'>Player 1 please input word and click Start Game. Player 2 will guess single letters in player 1's word. Player 2 will be allowed 5 wrong guesses before they lose.
-    </p>
-  </div>
-    <progress id="health" value="5" max="5"> </progress>
-    <div id='livesCounterTitle'>GUESSES LEFT</div>
-    <div id='livesCounter' value=5></div>
-    <div class="">
+        <p id='wordInputArr' class='wordInputArr'>
+          INSTRUCTIONS<br>
+          Player 1 please input word above and click Start Game.<br> Player 2 will guess one letter at a time in player 1's word in the field below.<br> Player 2 will be allowed 5 wrong guesses before they lose.
+        </p>
+    </div>
+    <progress id="health" value="5" max="5"></progress>
+
+
+
 
         <form id='form2'>
             <input id='wordInputTwo' type="text" maxlength='1' name="wordInputTwo" height="10px" width='100' placeholder="Letter Guesses">
-            <br><button id='buttonTwo' type="button" name="button">Player 2 Guesses</button>
+            <br><br><button id='buttonTwo' type="button" name="button">Player 2 Guesses</button>
         </form>
-    </div>
+        <div id='livesCounterTitle'>GUESSES LEFT</div>
+        <div id='livesCounter' value=5></div>
+
 
     <audio id="ffmusic" src='ffmusic.mp3'></audio>
     <audio id="good-sound" src='ooweee.mp3'></audio>
+    <audio id='horn' src="horn.mp3"></audio>
+    <audio id='victory' src="victory.mp3"></audio>
+    <audio id='boo' src="boo.mp3"></audio>
+
+
+
+
+
+
+
+
+
     <script src="hangman.js"></script>
 </body>
 
