@@ -6,9 +6,12 @@ body {
   font-size: 30px;
   text-shadow: 2px 2px yellow;
   background-image: url('hangman.jpg');
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 48%;
+  background-size: 1000px 700px;
+  background-color: black;
+
+
 }
 
 .letterHolder {
@@ -26,8 +29,8 @@ body {
 #wordInputArr {
   word-wrap: break-word;
   width: 350px;
-  justify-content: flex-end;;
-  display: flex;
+  justify-content: center;
+  display: inline-flex;
 }
 
 #wordInputTwo {
@@ -38,6 +41,14 @@ input {
   text-align: center;
 }
 
+.title  {
+  font-family: "raider crusader", "blacksword";
+  color: darkblue;
+  text-shadow: yellow;
+  font-size: 65px;
+  text-decoration: underline;
+}
+
 #livesCounter {
 
 }
@@ -45,4 +56,56 @@ input {
 #livesCounterTitle {
 
 
+}
+
+progress {
+   height: 100px;
+   width: 500px;
+}
+
+
+
+
+#test p {
+    justify-content: center;
+    width: 400px;
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 3s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }

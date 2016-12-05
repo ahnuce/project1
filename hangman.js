@@ -13,8 +13,10 @@ var form = document.getElementById('wordInput');
 var $letterInput = $('letterInput');
 var lives = 5;
 var x;
+var health = document.getElementById("health")
 var livesCounter = document.getElementById('livesCounter');
 var form2 = document.getElementById('wordInputTwo');
+
 var goodSound = function playIt(){
    document.getElementById("good-sound").play();
 };
@@ -52,6 +54,7 @@ buttonTwo.click(function() {
             $('#wordInputTwo').val('');
             document.getElementById('wordInputTwo').focus();
             wordInputTwoArray.push(currentLetter);
+
 //plays sound when getting a right guess
             goodSound();
 
@@ -70,6 +73,7 @@ buttonTwo.click(function() {
         console.log('losing lives');
         $('#wordInputTwo').val('');
         document.getElementById('wordInputTwo').focus();
+        health.value = lives;
     }
     if (lives === 0) {
         confirm('Player 1 has made you into a loser');

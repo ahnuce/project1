@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <div id='title'>Hangman Game</div>
+
+    <div class='title'>Hangman Game</div>
 
 
     <form action="hangman.html">
@@ -17,10 +18,11 @@
         <button id='buttonOne' type="button" name="button">Start Game</button>
     </form>
 
-
+    <div id='test'>
     <p id='wordInputArr' class='wordInputArr'>Player 1 please input word and click Start Game. Player 2 will guess single letters in player 1's word. Player 2 will be allowed 5 wrong guesses before they lose.
     </p>
-
+  </div>
+    <progress id="health" value="5" max="5"> </progress>
     <div id='livesCounterTitle'>GUESSES LEFT</div>
     <div id='livesCounter' value=5></div>
     <div class="">
