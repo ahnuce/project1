@@ -1,4 +1,3 @@
-random code for hangman
 
 // function createAlphabetDivs(){
 //   userInputDiv.html("");
@@ -7,8 +6,7 @@ random code for hangman
 //     span.text(alphabet[i].toUpperCase());
 //     userInputDiv.append(span);
 //   }
-// }
-
+// } 
 
 // create function to take the wordInput and create divs with underlines
 //
